@@ -1,0 +1,20 @@
+<h1>Listing discos</h1>
+
+<table>
+  <tr>
+    <th>Correlativo</th>
+  </tr>
+
+<% @discos.each do |disco| %>
+  <tr>
+    <td><%=h disco.correlativo %></td>
+    <td><%= link_to 'Show', disco %></td>
+    <td><%= link_to 'Edit', edit_disco_path(disco) %></td>
+    <td><%= link_to 'Destroy', disco, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New disco', new_disco_path %>

@@ -1,0 +1,16 @@
+<h1>Editing disco</h1>
+
+<% form_for(@disco) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :correlativo %><br />
+    <%= f.text_field :correlativo %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @disco %> |
+<%= link_to 'Back', discos_path %>

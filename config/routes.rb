@@ -1,4 +1,18 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :generos
+
+  map.resources :titulos
+
+  map.resources :artistas
+
+  map.resources :artistas
+
+  map.resources :medios
+
+  map.resources :tipos
+
+  map.resources :discos
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
