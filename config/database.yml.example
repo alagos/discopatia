@@ -1,0 +1,20 @@
+global: &global
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: dj
+  password: tornamesa
+
+development:
+  <<: *global
+  database: disquera
+
+test:
+  <<: *global
+  database: disquera_test
+
+production:
+  <<: *global
+  database: disquera_prod
+
+

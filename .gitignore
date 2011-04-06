@@ -1,0 +1,8 @@
+config/database.yml
+config/environment.rb
+db/*.sqlite3
+log/
+tmp/
+*~
+.#*
+
